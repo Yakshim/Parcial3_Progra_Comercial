@@ -2,7 +2,6 @@ from django.db import models
 
 
 class Hotel(models.Model):
-
     name = models.CharField(max_length=100)
 
 
@@ -19,7 +18,7 @@ class Huesped(models.Model):
     telefono = models.TextField()
     Hotel = models.ForeignKey(
 
-        Hotel, related_name="Huesped", on_delete=models.CASCADE
+        Hotel, related_name="huesped", on_delete=models.CASCADE
 
     )
 

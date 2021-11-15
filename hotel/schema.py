@@ -11,7 +11,7 @@ from hotel.models import Hotel, Huesped
 class HotelNode(DjangoObjectType):
     class Meta:
         model = Hotel
-        filter_fields = ['name', 'Huesped']
+        filter_fields = ['name', 'huesped']
         interfaces = (relay.Node, )
 
 # Se hace lo mismo con el modelo Ingredient
@@ -21,9 +21,9 @@ class HuespedNode(DjangoObjectType):
         # Permite un filtrado mas avanzado
         filter_fields = {
             'name': ['exact', 'icontains', 'istartswith'],
-            'direccion': ['exact', 'icontains', 'istartswith'],
-            'correo': ['exact', 'icontains', 'istartswith'],
-            'telefono': ['exact', 'icontains', 'istartswith'],
+            'direccion': ['exact', 'icontains'],
+            'correo': ['exact', 'icontains'],
+            'telefono': ['exact', 'icontains'],
             'Hotel': ['exact'],
             'Hotel__name': ['exact'],
         }
