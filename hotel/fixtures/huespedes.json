@@ -1,4 +1,1 @@
-[{"model": "Huesped.Hotel", "pk": 1, "fields": {"name": "David Perez", "direccion": "2av 6-03 zona 8", "correo": "Perez10@gmail.com", "telefono": "49717965", "Hotel": 1}}, 
-        {"model": "Huesped.Hotel", "pk": 2, "fields": {"name": "Andrea Castillo", "direccion": "13 calle 6-08 zona 11", "correo": "Andrea50@gmail.com", "telefono": "30507263", "Hotel": 1}}, 
-            {"model": "Huesped.Hotel", "pk": 3, "fields": {"name": "Juan Diego", "direccion": "4av 10-05 zona 10", "correo": "JuanD@gmail.com", "telefono": "51642815", "Hotel": 2}}, 
-                {"model": "Huesped.Hotel", "pk": 4, "fields": {"name": "Javier Izas", "direccion": "15 calle 05-12 zona 3", "correo": "Javi80@gmail.com", "telefono": "30408592", "Hotel": 2}}]
+[{"model": "Huesped", "fields": {"pk": 1, "name": "David Perez", "direccion": "2av 6-03 zona 8", "correo": "Perez10@gmail.com", "telefono": "49717965"}}]

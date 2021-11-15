@@ -38,6 +38,9 @@ import gql from 'graphql-tag'
                    allHuespedes {
                       id
                       name
+                      direccion
+                      correo
+                      telefono
                     }
                   }`,     
         })
