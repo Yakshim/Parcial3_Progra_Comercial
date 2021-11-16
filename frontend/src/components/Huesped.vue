@@ -2,7 +2,11 @@
   <div>
     <ul>
         <li :key="huesped.id" v-for="huesped  in huespedes.data.allHuespedes" >
+          {{huesped.id}}
           {{huesped.name}}
+          {{huesped.direccion}}
+          {{huesped.correo}}
+          {{huesped.telefono}}
         </li>
     </ul>    
   </div>
@@ -15,7 +19,7 @@ import gql from 'graphql-tag'
 
 
   export default {
-    name: 'HuespedList',    
+    name: 'HuespedsList',    
     //definimos la variable que almacenara el listado de ingredientes
     data () {
       return {
